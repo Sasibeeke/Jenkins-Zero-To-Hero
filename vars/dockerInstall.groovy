@@ -1,3 +1,3 @@
 def call(){
-sh 'apt-get install docker.io -y'
+sh 'sudo apt-get install docker.io -y'
 }
