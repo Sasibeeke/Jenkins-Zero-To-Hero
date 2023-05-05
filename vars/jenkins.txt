@@ -1,0 +1,17 @@
+@Library("my-shared-library") _
+pipeline {
+    agent any
+
+    stages {
+        stage('Git checkout') {
+            steps {
+               helloWorld()
+            }
+        }
+        stage('build using maven'){
+            steps{
+               dockerInstall()
+            }
+        }
+    }
+}
